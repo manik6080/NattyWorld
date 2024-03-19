@@ -9,7 +9,7 @@ const MyWorkouts = () => {
 	const [isLoading, setIsLoading] = useState(false);	
 
 	const fetchWorkoutsArray = async () =>{
-		return await fetch("https://nattyworld-server.onrender.com/api/v1/users/getUserWorkouts",{
+		return await fetch("http://23.21.227.141:9000/api/v1/users/getUserWorkouts",{
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

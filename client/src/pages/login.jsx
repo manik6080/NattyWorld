@@ -33,7 +33,7 @@ const currUser=useSelector(state=>state.user?.name)
     try {
       setIsLoading(true)
       e.preventDefault()
-      const res=await fetch('https://nattyworld-server.onrender.com/api/v1/users/login',{
+      const res=await fetch('http://23.21.227.141:9000/api/v1/users/login',{
         method: "POST",
         headers: {
           "Content-Type": "application/json",

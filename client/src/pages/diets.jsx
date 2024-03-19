@@ -10,7 +10,7 @@ const Diets = () => {
 	useEffect(() => {
 		setIsLoading(true);
 		const fetchDiet = async () => {
-			await fetch("https://nattyworld-server.onrender.com/api/v1/diet/dietList")
+			await fetch("http://23.21.227.141:9000/api/v1/diet/dietList")
 				.then(async (res) => {
 					let x = await res.json(); 
 					setDiet(x["data"]);

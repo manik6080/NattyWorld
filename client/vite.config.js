@@ -6,7 +6,7 @@ export default defineConfig({
   server:{
     proxy: {
       '/api':'http://localhost:9000/'
-      // 'api/' : 'https://nattyworld-server.onrender.com/'
+      // 'api/' : 'http://23.21.227.141:9000/'
     },
     watch:{
       usePolling:true 
